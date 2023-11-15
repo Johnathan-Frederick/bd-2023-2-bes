@@ -21,6 +21,10 @@ Pronto, o **BD Empresa** foi criado e está pronto para ser manipulado (usado).<
   - substitua _<nome_relação>_ por:
     - FUNCIONARIO, DEPARTAMENTO, LOCALIZACAO_DEP, PROJETO, TRABALHA_EM, DEPENDENTE.
 
+'''sql
+
+'''
+
 ### Exercício 2
 
   Seja o arquivo [agricultura.relax](../data/agricultura.relax), para a criação de um _dataset_ na ferramente _RelaX_, referente ao **BD Agricultura**.
