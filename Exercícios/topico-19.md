@@ -6,7 +6,7 @@ Para cada dependente, apresente o nome do dependente e o primeiro e último nome
 ~~~sql
 SELECT nome_dependente,pnome,unome
 	FROM (funcionario AS F JOIN dependente AS D ON F.cpf = D.fcpf)
-		WHERE D.nome_dependente LIKE 'Jo%'
+		WHERE (D.nome-dependente LIKE 'Jo%' OR F.pnome LIKE 'Jo%')
         	OR F.pnome LIKE 'Jo%'
 ~~~
 
@@ -14,7 +14,8 @@ SELECT nome_dependente,pnome,unome
 ~~~sql
 SELECT nome_dependente,pnome,unome
 	FROM (funcionario AS F JOIN dependente AS D ON F.cpf = D.fcpf)
-		WHERE (D.nome_dependente LIKE '%an' OR F.pnome LIKE '%an')
+		WHERE (D.nome-dependente LIKE 'Jo%' OR F.pnome LIKE 'Jo%')
+			AND (D.nome_dependente LIKE '%an' OR F.pnome LIKE '%an')
 ~~~
 - o tamanho do primeiro nome do dependente ou do empregado responsável é o mesmo que o tamanho do seu primeiro nome (se refere a você, que é discente da disciplina) 
 ~~~sql
