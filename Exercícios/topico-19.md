@@ -7,7 +7,7 @@ Para cada dependente, apresente o nome do dependente e o primeiro e último nome
 SELECT nome_dependente,pnome,unome
 	FROM (funcionario AS F JOIN dependente AS D ON F.cpf = D.fcpf)
 		WHERE (D.nome-dependente LIKE 'Jo%' OR F.pnome LIKE 'Jo%')
-        	OR F.pnome LIKE 'Jo%'
+
 ~~~
 
 - as duas últimas letras do primeiro nome do dependente ou do empregado responsável são as mesmas do seu primeiro nome (se refere a você, que é discente da disciplina), e
