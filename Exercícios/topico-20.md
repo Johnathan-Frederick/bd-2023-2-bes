@@ -17,5 +17,5 @@ _Para cada funcionário, liste o primeiro nome e o último nome e, se o funcion�
 SELECT pnome,unome, nome_dependente
 FROM funcionario RIGHT JOIN 
 	(SELECT fcpf,nome_dependente FROM
-     dependente) ON cpf=fcpf
+	dependente) ON cpf=fcpf
 ~~~
